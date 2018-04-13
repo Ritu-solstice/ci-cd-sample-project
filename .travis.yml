@@ -1,0 +1,26 @@
+language: java
+jdk:
+- oraclejdk8
+
+script:
+- mvn test
+
+
+# deploy:
+#   provider: cloudfoundry
+#   username: ragrawal@solstice.com
+#   password: **
+#   api: https://api.run.pivotal.io
+#   organization: myawesomeorganization
+#   space: staging
+#deploy:
+#  provider: pages
+#  skip-cleanup: true
+#  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+#  keep-history: true
+#  on:
+#    branch: dev
+
+notifications:
+  slack:
+    on_success: always

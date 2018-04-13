@@ -20,7 +20,6 @@ script:
 #  keep-history: true
 #  on:
 #    branch: dev
-
-notifications:
-  slack:
-    on_success: always
+branches:
+  only:
+  - master

@@ -1,18 +1,16 @@
 language: java
 jdk:
 - oraclejdk8
-
 script:
 - mvn test
-
 branches:
   only:
   - master
-
 deploy:
-   provider: cloudfoundry
-   username: ragrawal@solstice.com
-   password: "OeeFo4PEsXNmZb4E92+m5zf8xAsdjAJtb8ClfUDTPF5WpFE7Ni5+90+Sen3kOIlZbWlWwfZdiF4IEZRx/5/1YyoW5GLdEWV5cpz2HJc++Yi46AfK2KXta6z9pELOROMNFavkAvoZVbQgK97nQc9+IQgjup9K8BxweIDL9Toy9zbBqR72WcOk+UEDMJd7DzQgnrSwAaIEiyk6fPmH9NlFyhmrXCHx1axwSJ5uXY90wNppTLQQgaxyl8/2TMfkQhNgxuBARePdWleshgXwT/DgrgIxNtdzy5CS25AiUOpF6h7l5ySAK7wYUmE3y3/adnp5dF5Np2u9ePiGVM4VgHzmfrHbWnp8Kx/7MI33kXLLcoXimAswtMzSJXSUbAVG6/qiqBkQRbojSKRyNsLt0Jz80ZqwTp8nli4OIBgnERx3YpApYzgULX5w+PP0HtvTeXKszv8NVTE2fLyxcjcw8s8UcHuPFxRJrEDZwwUTC3T/7O8pnM8OCR0OE6oJ6hf9A6LNGXkh/aOkB/s/tdKwd3ZoyvZMcfR2jaubytJWj2l8ZuCWvjZGZOQ7/qVCSE/Vu3N0ASyjkuYmMKrrCweJ9q7520ITDKga6tjHYBESpzSBh20F72aBTOc7op8BYS1/tA82vTHp7t1YjgMZ6K0WdqD6eaRMH4HvCvNJjInfV96tqnw="
-   api: https://api.run.pivotal.io
-   organization: solstice-org
-   space: ritu-cnt
+  provider: cloudfoundry
+  username: ragrawal@solstice.com
+  password:
+    secure: aryYzjxlIgGtDx1vCYv71O1fN2pn0KSij2VFphtrcJrITwVD1qTqVNm22qjbA3HwistLFGtH3oxy4dZs1zELKQDwv2k555H3+IdSq9Qk0A7nNWiVGcle0fxKmumQRVAvLMzquYp70DCSuIHFwsoLrdfdJMjrCAMbYJ3esh32qGhm7G/caJNBzw1XgD+HQqh1HgcGX0RI2CESJYaDHpsXN+o2sIsa0EudRI2oVrsrnwSppO7723b65t72ay5YJZECsI6Lj70IuwQMxlIiYhCArn36E3PMAihKu5d+y/4JfxqXlgae9U/2J8v8ftK4OGCMYj02/qF+XYC5Oy2XBlj3xRdK4oCDt7ZLIC9roDwFii4yAdpH3e+FJLV8VAymrS8hcGcaTCDHD8CJ9T0ixUoPW1KMz/FmasXHK6g6gocxQnjOp6WdQ4f+wC7HT37kYK8MxHlgEAYafFL1RAJlHjjI3naelNvYVZS0ZnW++5vECEiqg2fGffEM6b8gJvT3fpXavGRnq7YIydiCNXf8WFNjykERBa119Hi6FQyg1Z2yb6uFqlc8/nWGaBDvOT/1tJwdDX6xAcjCYhh0GRg/KMR28zazfr8KMvyqhg6zP91gGLRa3hQ++sGNA0ogZGAxM+vuKiGO6ESGzrhbMFMSzkBkaFXO6RCzyANxcf0eXmWOmQM=
+  api: https://api.run.pivotal.io
+  organization: solstice-org
+  space: ritu-cnt

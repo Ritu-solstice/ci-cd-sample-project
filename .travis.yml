@@ -7,7 +7,7 @@ branches:
   only:
   - master
 deploy:
-  provider: cloudfoundry
+  provider: https://login.run.pivotal.io/login #cloudfoundry
   username: ragrawal@solstice.com
   password:
     secure: aryYzjxlIgGtDx1vCYv71O1fN2pn0KSij2VFphtrcJrITwVD1qTqVNm22qjbA3HwistLFGtH3oxy4dZs1zELKQDwv2k555H3+IdSq9Qk0A7nNWiVGcle0fxKmumQRVAvLMzquYp70DCSuIHFwsoLrdfdJMjrCAMbYJ3esh32qGhm7G/caJNBzw1XgD+HQqh1HgcGX0RI2CESJYaDHpsXN+o2sIsa0EudRI2oVrsrnwSppO7723b65t72ay5YJZECsI6Lj70IuwQMxlIiYhCArn36E3PMAihKu5d+y/4JfxqXlgae9U/2J8v8ftK4OGCMYj02/qF+XYC5Oy2XBlj3xRdK4oCDt7ZLIC9roDwFii4yAdpH3e+FJLV8VAymrS8hcGcaTCDHD8CJ9T0ixUoPW1KMz/FmasXHK6g6gocxQnjOp6WdQ4f+wC7HT37kYK8MxHlgEAYafFL1RAJlHjjI3naelNvYVZS0ZnW++5vECEiqg2fGffEM6b8gJvT3fpXavGRnq7YIydiCNXf8WFNjykERBa119Hi6FQyg1Z2yb6uFqlc8/nWGaBDvOT/1tJwdDX6xAcjCYhh0GRg/KMR28zazfr8KMvyqhg6zP91gGLRa3hQ++sGNA0ogZGAxM+vuKiGO6ESGzrhbMFMSzkBkaFXO6RCzyANxcf0eXmWOmQM=

@@ -6,14 +6,12 @@ script:
 branches:
   only:
   - master
-#env:
-#  global:
-#    - secure: H5XYlU+au4X25zUgPJYg44RDENAUtQs13bc7HNNiMvMtctaIMjWYdH4fh21ISSLlgrCR1pF/RU1u2Y7O4MH9ViHc6zc3t68oaO2GofS7CK5ucw8IFBHg0SmsuoNvItWRlhfTM/wVIomkcaXSRKKUNyJNLSPCQrN+Kft7cpyhse69ElZGJDxx+KD3ko2D/JQ27DgeDuoF+pQQsOo93KaRsWyGdql3rFULGzbingze+sxymy/R02wkvABePesvYOoLzy6LEd2lpvOoJi/P0i6Q061d8l7P/LzJwj/WUlNGiXb/Id5O+XiqeY1Sh6nZbvuvO8+p5YnE6Q4/02bHmKNo3mTZ9oQVv2Cxp/xiTVDnKQ6NIM4XMNHyace/K7VypqvKjJKjvTHuiEAIpKKSmBciGjiskRUhRbxpZ1yxErCWbW+jP9K2ohHJf0Xu8nHXuY0vIkP+tcOkY3Fcq7yqGWgXzz/7jGRQCUN7LWt/v1WqpBTd0El9TopDqmgROb4sMx/GDTfkAj1EPBluG1NfEQzjepWY6mxGFhEMg+ldbfSsUKxcBhh2QS4lHhn60AWKaW0U1C4CLgBaNLwm6F5eVTGzB2ErRFSPAK+EEv2fV32InoFHVK2uxOSAtiPX6umIxzoWj/8i6yrbTPLxbSoQCR4kdGyDYG7rr8zqcynqmUoDZYs=
+env:
+  global:
+    - secure: H5XYlU+au4X25zUgPJYg44RDENAUtQs13bc7HNNiMvMtctaIMjWYdH4fh21ISSLlgrCR1pF/RU1u2Y7O4MH9ViHc6zc3t68oaO2GofS7CK5ucw8IFBHg0SmsuoNvItWRlhfTM/wVIomkcaXSRKKUNyJNLSPCQrN+Kft7cpyhse69ElZGJDxx+KD3ko2D/JQ27DgeDuoF+pQQsOo93KaRsWyGdql3rFULGzbingze+sxymy/R02wkvABePesvYOoLzy6LEd2lpvOoJi/P0i6Q061d8l7P/LzJwj/WUlNGiXb/Id5O+XiqeY1Sh6nZbvuvO8+p5YnE6Q4/02bHmKNo3mTZ9oQVv2Cxp/xiTVDnKQ6NIM4XMNHyace/K7VypqvKjJKjvTHuiEAIpKKSmBciGjiskRUhRbxpZ1yxErCWbW+jP9K2ohHJf0Xu8nHXuY0vIkP+tcOkY3Fcq7yqGWgXzz/7jGRQCUN7LWt/v1WqpBTd0El9TopDqmgROb4sMx/GDTfkAj1EPBluG1NfEQzjepWY6mxGFhEMg+ldbfSsUKxcBhh2QS4lHhn60AWKaW0U1C4CLgBaNLwm6F5eVTGzB2ErRFSPAK+EEv2fV32InoFHVK2uxOSAtiPX6umIxzoWj/8i6yrbTPLxbSoQCR4kdGyDYG7rr8zqcynqmUoDZYs=
 deploy:
   provider: cloudfoundry
   username: ragrawal@solstice.com
-  password: ${PCF_Password}
-
   api: https://api.run.pivotal.io
   organization: solstice-org
   space: ritu-cnt

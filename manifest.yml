@@ -1,0 +1,15 @@
+---
+applications:
+- name: PCF_Training
+  memory: 768M
+  instances: 1
+  path: target/PCF_Training-0.0.1-SNAPSHOT.jar
+#  env:
+#    SPRING_PROFILES_ACTIVE: pcf
+  # routes:
+  # - route: fwd18-identity.cfapps.io
+#  services:
+#  - fwd18-config
+#  - fwd18-identity-mongodb
+#  - fwd18-identity-mq
+#  - fwd18-identity-redis
